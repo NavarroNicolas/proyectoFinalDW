@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+}
+
+.grid-conteiner{
+    display: grid;
+}
+
+.formulario{
+    background-color: rgb(230, 230, 252);
+    height:max-content;
+}
+legend{
+    text-align: center;
+    font-size: 20px;
+    text-decoration: underline;
+    padding: 30px 5px;
+}
+.nombre, .Apellido, .mail, .telefono, .paises, .mensajito, .botones{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.mensajito{
+    display: grid;
+    text-align: center;
+}
+ #msj{
+    height: 100px;
+    
+} 
+
+#send{
+    border-radius: 50px;
+    height: 45px;
+    border: 2px solid black;
+    box-shadow: 5px 3px rgb(112, 99, 99);
+}
+#borrar{
+    border-radius: 50px;
+    height: 45px;
+    border: 2px solid black;
+    box-shadow: 5px 3px rgb(112, 99, 99);
+    margin-left: 20px;
+}
+
+
+.grid-footer{
+    height: 170px;
+    background: black;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.ofice{
+    padding: 20px;
+    color: white;
+    font-size: 14px;
+}
+
+footer iframe{
+    position: relative;
+    max-height: 100%;
+    width: 200px;
+}
+
+.redes-conteiner{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    height: 100px;   
+}
+.redes-conteiner img{
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+    margin: 0 20px;
+    filter: grayscale(100%);
+}
+
+.redes-conteiner img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.5);
+}
+
+
+@media (min-width:768px){
+
+   
+        #msj:focus{
+            font-size: 20px;
+            text-align: center;
+            height: 300px;
+            width: 500px;
+        } 
+
+        
+        
+}

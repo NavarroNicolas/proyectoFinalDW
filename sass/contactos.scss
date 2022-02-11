@@ -1,0 +1,123 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+}
+@mixin form {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+}
+
+
+.grid-conteiner{
+    display: grid;
+
+    .formulario{
+        background-color: rgb(230, 230, 252);
+        height:max-content;
+        font-weight: 700;
+        }
+
+        input{
+            background: #0d6efd;
+            color: white;
+        }
+
+        legend{
+            margin-top: 50px;
+            text-align: center;
+            font-size: 24px;
+            text-decoration: underline;
+            padding: 30px 5px;
+        }
+
+        .nombre, .Apellido, .mail, .telefono, .paises, .mensajito, .botones{
+            @include form;
+        }
+
+        .mensajito{
+            display: grid;
+            text-align: center;
+        }
+        #msj{
+            height: 100px;
+            
+        } 
+
+
+        /* Entend */
+        .botones
+                {   
+                .enviar{
+                    border-radius: 50px;
+                    height: 45px;
+                    padding: 10px;
+                    border: 1px solid black;
+                        &:active{
+                            transform: translateY(5px)
+                         }
+                }
+
+                .eliminar{
+                    @extend .enviar;
+                    margin-left:20px;
+                }
+            }
+}
+
+.grid-footer{
+    height: 170px;
+    background: black;
+    display: inline-flex;
+    justify-content: space-around;
+    .ofice{
+        padding: 20px;
+        color: white;
+        font-size: 14px;
+    }   
+    iframe{
+        position: relative;
+        max-height: 100%;
+        width: 200px;
+    }
+}
+
+.redes-conteiner{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    height: 100px;   
+
+    img{
+        width: 60px;
+        height: 60px;
+        padding: 15px;
+        margin: 0 20px;
+        filter: grayscale(100%);
+
+        &:hover{
+            filter: grayscale(0%);
+            transform: scale(1.5);
+        }
+    }
+
+}
+    
+@media (min-width:768px){
+
+   
+    #msj:focus{
+        font-size: 20px;
+        text-align: center;
+        height: 300px;
+        width: 500px;
+    } 
+
+    
+    
+}

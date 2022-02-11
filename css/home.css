@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+}
+
+ .grid-main{
+    background-image: url(../imgs/home.jpg) ;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat:no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+}
+
+ .grid-main h1, p{
+    margin-top: 50px;
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.grid-main p:hover{
+    background-color: #0d6dfd8a;
+} 
+
+ section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: large;
+}
+section img{
+    background: #0d6dfd;
+    padding: 10px;
+    border-radius: 40px;
+    width: 50px;
+    margin: 20px 0;
+} 
+
+ .grid-footer{
+    width: 100%;
+    background-color: black;
+    display: inline-flex;
+    justify-content: space-around;
+    font-size: 14px;
+}
+
+.ofice{
+    padding: 20px;
+    color: white;
+}
+
+footer iframe{
+    position: relative;
+    height: 90%;
+    width: 180px;
+} 
+
+ .redes-conteiner{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 60px;
+}
+.redes-conteiner img{
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+    margin: 0 20px;
+    filter: grayscale(100%);
+}
+
+.redes-conteiner img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.5);
+} 
+
+
+@media (min-width: 769px){
+    section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+section h2 {
+    font-size: 16px;
+    margin-right: 50px;
+    }
+}
+
+  @media (min-width:1151px){
+
+
+     .grid-main{
+            background-image: url(../imgs/home.jpg) ;
+            height: 500px;
+            width: 100%;
+            background-size: cover;
+            background-repeat:no-repeat;
+            color: #7BF4F7;
+            font-size: 20px;
+            display: flex;
+            align-items: end;
+        }
+
+        .grid-main h1{
+            background-color: #0d6dfd;
+            border-radius: 50px;
+            margin-right: 150px;
+            color: white;
+        }
+
+        .grid-main p{
+            margin-right: 60px;
+            margin-top:0;
+            max-width: 500px;
+        }
+
+        .grid-main p:hover{
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        section{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        section h2{
+            font-size: 30px;
+            margin-right: 50px;
+        }
+}
+
+
+  
